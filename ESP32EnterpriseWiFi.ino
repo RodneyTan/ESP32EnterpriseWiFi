@@ -1,6 +1,6 @@
 #include <WiFi.h>
-
 #include "esp_wpa2.h" //wpa2 library for connections to Enterprise networks
+
 #define EAP_ANONYMOUS_IDENTITY "identity@organisation.domain"
 #define EAP_IDENTITY "identity@organisation.domain" 
 #define EAP_PASSWORD "password"
