@@ -7,7 +7,6 @@
 
 void ConnectEnterpriseWiFi() {
   const char* wpa2e_ssid = "SSID"; // WPA2-Enterprise SSID
-  const char* host = "organisation.domain"; //your organisation.domain for HTTP connection after authentification
   int wpa2e_count = 0;
   delay(10);
   Serial.println();
@@ -35,5 +34,7 @@ void setup(){
 }
 
 void loop(){ 
-  
+  delay(5000);
+  Serial.print("Connected Network Signal Strength (RSSI): ");
+  Serial.println(WiFi.RSSI());  /*Print WiFi signal strength*/
 }
